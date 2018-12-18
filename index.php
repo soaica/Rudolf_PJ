@@ -7,27 +7,37 @@
 <html>
 
 <head>
- <title>幸せ工学研究会 by HTML5 UP</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/assets/css/main.css" />
-    
+ 
+ <?php get_header(); ?>   
     
 </head>
 <body>
+
+    
+        
+
+   
+
+   
+     
 	 <section id="sidebar">
         <div class="inner">
+             
+
+
+                <?php // DuDoLf_menu('primary-menu'); ?>
+
+           
+           
             <nav>
-                <ul>
-                    <li><a href="#intro">Welcome</a></li>
-                    <li><a href="#one-1">研究会について</a></li>
-                    <li><a href="#two-1">活動記録</a></li>
-                    <li><a href="#three-1">ナレッジシート</a></li>
-                    <li><a href="#four-1">お問い合わせについて</a></li>
-                </ul>
-            </nav>
+                        <ul>
+                            <li><a href="#intro">Welcome</a></li>
+                            <li><a href="#one-1">研究会について</a></li>
+                            <li><a href="#two-1">活動記録</a></li>
+                            <li><a href="#three-1">ナレッジシート</a></li>
+                            <li><a href="#four-1">お問い合わせについて</a></li>
+                        </ul>
+                    </nav>
         </div>
     </section>
 		 <!-- Wrapper -->
@@ -42,6 +52,7 @@
                 </p>
                 <ul class="actions">
                     <li><a href="#one-1" class="button scrolly">Learn more</a></li>
+                </ul>
             </div>
         </section>
 
@@ -87,11 +98,11 @@
                 </ul>
             </div>
         </section>
-
+       
         <!-- Two -->
         <section id="two-1" class="wrapper style2 spotlights">
             <section>
-                <a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic01.jpg" alt="" data-position="center center" /></a>
+                <a href="#" class="image"><img src="/DuDoLf/wp-content/themes/thachpham/images/pic01.jpg" alt="" data-position="center center" /></a>
                 <div class="content">
                     <div class="inner">
                         <h2>活動記録 vol.1</h2>
@@ -103,7 +114,7 @@
                 </div>
             </section>
             <section id="two-2">
-                <a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic02.jpg" alt="" data-position="top center" /></a>
+                <a href="#" class="image"><img src="/DuDoLf/wp-content/themes/thachpham/images/pic02.jpg" alt="" data-position="top center" /></a>
                 <div class="content">
                     <div class="inner">
                         <h2>活動記録 vol.2</h2>
@@ -115,7 +126,7 @@
                 </div>
             </section>
             <section id="two-3">
-                <a href="#" class="image"><img src="<?php bloginfo('template_url'); ?>/images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+                <a href="#" class="image"><img src="/DuDoLf/wp-content/themes/thachpham/images/pic03.jpg" alt="" data-position="25% 25%" /></a>
                 <div class="content">
                     <div class="inner">
                         <h2>活動記録 vol.3</h2>
@@ -171,7 +182,12 @@
             </div>
         </section>
 
+
+        <!-- Form -->
+        <?php include('register.php'); ?>
+         <div style="clear: both;"></div>
         <!-- Four -->
+         <!-- Four -->
         <section id="four-1" class="wrapper style1 fade-up">
             <div class="inner">
                 <h2>お問い合わせについて</h2>
@@ -201,8 +217,8 @@
                             <li>
                                 <h3>Address</h3>
                                 <span>〒151-0051 東京都渋谷区 千駄ヶ谷３丁目４−２３<br />
-											ビクトリーガーデン203<br />
-											</span>
+                                            ビクトリーガーデン203<br />
+                                            </span>
                             </li>
                             <li>
                                 <h3>お問い合わせ先（メール）</h3>
@@ -230,7 +246,7 @@
 
     </div>
 
-	<footer id="footer" class="wrapper style1-alt">
+    <footer id="footer" class="wrapper style1-alt">
         <div class="inner">
             <ul class="menu">
                 <li>&copy; 幸せ工学研究会 All rights reserved.</li>
@@ -240,14 +256,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.scrollex.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery.scrolly.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/skel.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/util.js"></script>
-    <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/main.js"></script>
-
+   <?php get_footer(); ?>
 </body>
 </body>
 

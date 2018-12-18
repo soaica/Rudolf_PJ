@@ -144,6 +144,7 @@
 
 				}
 			});
+			
 
 		// Spotlights.
 			$('.spotlights > section')
